@@ -14,16 +14,15 @@ const projectItemStyle = {
   borderRadius: '5px',
 };
 
-
 function Projects() {
   const projects = [
-    { title: "Project 1", description: "Description of Project 1" },
+    { title: "Counter", description: "Description of Project 1" },
     { title: "Project 2", description: "Description of Project 2" },
     { title: "Project 3", description: "Description of Project 3" },
   ];
 
   return (
-    <div style={projectStyle}>
+    <div id="projects" style={projectStyle}>
       <h1>My Projects</h1>
       {projects.map((project, index) => (
         <div key={index} style={projectItemStyle}>

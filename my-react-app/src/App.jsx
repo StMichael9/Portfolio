@@ -6,6 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Exp from './Exp';
 import ChatBot from './Chatbot';
+import { fetchData } from './api';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       < About />
       < Exp />
       <Projects />
+      
       
     
     </>
