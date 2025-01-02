@@ -6,7 +6,10 @@ import About from './About';
 import Projects from './Projects';
 import Exp from './Exp';
 import ChatBot from './Chatbot';
-import { fetchData } from './api';
+import Cert from './Cert';
+
+
+
 
 function App() {
   return (
@@ -15,6 +18,7 @@ function App() {
       < About />
       < Exp />
       <Projects />
+      <Cert />
       
       
     
