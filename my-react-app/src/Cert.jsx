@@ -16,14 +16,16 @@ const imageStyle = {
 
 function Cert() {
   return (
-    <div style={certStyle}>
-      <h2>My Certifications</h2>
-      <img 
-        src={fccCertification} 
-        alt="FreeCodeCamp Certification" 
-        style={imageStyle}
-      />
-    </div>
+    <section id="cert">
+      <div style={certStyle}>
+        <h2>My Certifications</h2>
+        <img 
+          src={fccCertification} 
+          alt="FreeCodeCamp Certification" 
+          style={imageStyle}
+        />
+      </div>
+    </section>
   );
 }
 

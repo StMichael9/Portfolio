@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "express": "^4.21.2",
-    "heroku-cli-util": "^8.0.12",
+    "heroku-cli-util": "^5.8.4",
     "openai": "^4.76.3",
     "react-router-dom": "^7.0.2"
   }

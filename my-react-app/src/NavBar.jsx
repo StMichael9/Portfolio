@@ -16,6 +16,7 @@ function NavBar() {
         <li onClick={() => scrollToSection('about')}>About</li>
         <li onClick={() => scrollToSection('resume')}>Resume</li>
         <li onClick={() => scrollToSection('projects')}>Projects</li>
+        <li onClick={() => scrollToSection('cert')}>Certification</li>
       </ul>
     </nav>
   );
