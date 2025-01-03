@@ -10,7 +10,7 @@
       "use": "@vercel/static-build",
       "config": { 
         "distDir": "my-react-app/dist",
-        "buildCommand": "cd my-react-app && npm install && npm run build"
+        "buildCommand": "cd my-react-app && ls -la src && npm install && npm run build"
       }
     }
   ],
