@@ -14,7 +14,7 @@ function NavBar() {
       <ul className="nav-links">
         <li onClick={() => scrollToSection('home')}>Home</li>
         <li onClick={() => scrollToSection('about')}>About</li>
-        <li onClick={() => scrollToSection('resume')}>Resume</li>
+        <li onClick={() => scrollToSection('exp')}>Languages</li>
         <li onClick={() => scrollToSection('projects')}>Projects</li>
         <li onClick={() => scrollToSection('cert')}>Certification</li>
       </ul>

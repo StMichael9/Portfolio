@@ -14,11 +14,18 @@ const projectItemStyle = {
   borderRadius: '5px',
 };
 
+const linkStyle = {
+  display: 'block',
+  marginTop: '10px',
+  color: '#007bff',
+  textDecoration: 'none',
+};
+
 function Projects() {
   const projects = [
-    { title: "Counter", description: "Description of Project 1" },
-    { title: "Project 2", description: "Description of Project 2" },
-    { title: "Project 3", description: "Description of Project 3" },
+    { title: "E-Com Site", description: "Description of Project", liveDemo: "https://example.com/ecom-site" },
+    { title: "Counter 2", description: "Description of Project", liveDemo: "https://example.com/counter-2" },
+    { title: "Ping Pong Game", description: "A fun and interactive Ping Pong game built with HTML, CSS, and JavaScript.", liveDemo: "https://ping-pong-nine-beta.vercel.app/" },
   ];
 
   return (
@@ -28,6 +35,7 @@ function Projects() {
         <div key={index} style={projectItemStyle}>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
+          <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" style={linkStyle}>Live Demo</a>
         </div>
       ))}
     </div>

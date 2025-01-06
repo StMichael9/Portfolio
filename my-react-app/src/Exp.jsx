@@ -29,6 +29,7 @@ const textStyle = {
 
 function Exp() {
     return (
+        <div id="exp">
         <div className="experience-section">
             <h1 style={textStyle}>Languages</h1>
             <p></p>
@@ -42,6 +43,7 @@ function Exp() {
                 <img src="https://www.pngitem.com/pimgs/m/664-6644509_icon-react-js-logo-hd-png-download.png" 
                     alt="React JS Logo" style={picStyle} />
             </div>
+        </div>
         </div>
     );
 }
