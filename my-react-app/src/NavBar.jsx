@@ -12,7 +12,7 @@ function NavBar() {
     <nav className="navbar">
       <div className="logo">Saint Michael Egenamba</div>
       <ul className="nav-links">
-        <li onClick={() => scrollToSection('home')}>Home</li>
+
         <li onClick={() => scrollToSection('about')}>About</li>
         <li onClick={() => scrollToSection('exp')}>Languages</li>
         <li onClick={() => scrollToSection('projects')}>Projects</li>
