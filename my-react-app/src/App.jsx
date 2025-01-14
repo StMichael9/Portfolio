@@ -1,26 +1,25 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import About from './components/About';
-import Projects from './components/Projects';
-import Exp from './components/Exp';
-import Cert from './components/Cert';
+import Contact from './components/Contact';
 
-
-
+// Lazy load components
+const About = lazy(() => import('./components/About'));
+const Projects = lazy(() => import('./components/Projects'));
+const Exp = lazy(() => import('./components/Exp'));
+const Cert = lazy(() => import('./components/Cert'));
 
 function App() {
   return (
     <>
       <NavBar />
-      < About />
-      < Exp />
-      <Projects />
-      <Cert />
-      
-      
-    
+      <Suspense fallback={<div>Loading...</div>}>
+        <About />
+        <Exp />
+        <Projects />
+        <Cert />
+      </Suspense>
+      <Contact />
     </>
   );
 }

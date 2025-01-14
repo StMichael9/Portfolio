@@ -47,7 +47,7 @@ body::before {
   top: 0;
   left: 0;
   right: 0;
-  background: white;
+  background: radial-gradient(circle, #2b1055, #000428);
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -86,6 +86,7 @@ body::before {
   cursor: pointer;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  color:azure;
 }
 
 .nav-button:hover {
@@ -110,11 +111,6 @@ body::before {
   }
 }
 
-.experience-section {
-  padding: 20px;
-  background-color: rgba(240, 240, 240, 0.1); /* Semi-transparent light background */
-  margin-top: 20px;
-}
 
 .App {
   text-align: center;
@@ -132,4 +128,53 @@ section {
 
 h2 {
   margin-bottom: 20px;
+}
+
+.experience-section {
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.1); /* Semi-transparent light background */
+  margin-top: 20px;
+}
+
+.contact-footer {
+  background: linear-gradient(to right, #2b1055, #000428);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0px; /* Added margin-top */
+  font-size: 1.2em; 
+  line-height: 1.6; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto; /* Added margin-top: auto to push it down */
+  max-height: 40%;
+  
+}
+
+.contact-content {
+  margin-top: 20px; /* Added margin-top to separate the content from the footer */
+}
+
+
+.contact-footer a {
+  color: #9b5de5;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+.contact-content h2 {
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  margin: 5px 0;
+  margin-bottom: 10px; /* Added margin-bottom */
 }

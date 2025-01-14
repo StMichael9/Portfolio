@@ -21,10 +21,15 @@ const linkStyle = {
   textDecoration: 'none',
 };
 
+const textStyle = {
+  fontSize: '1.2em',
+  lineHeight: '1.6',
+}
+
 function Projects() {
   const projects = [
-    { title: "E-Com Site", description: "Description of Project", liveDemo: "https://example.com/ecom-site" },
-    { title: "Counter 2", description: "Description of Project", liveDemo: "https://example.com/counter-2" },
+    { title: "E-Com Site", description: "Coming Soon...", /*liveDemo: "https://example.com/ecom-site" } */ }  ,
+    { title: "Counter 2", description: "This is a simple yet functional counter application built using React and Vite. The app allows users to increase, decrease, and reset the counter value. It's a great example of state management in React and demonstrates the use of functional components and hooks.", liveDemo: "https://counter-blush-rho.vercel.app/" },
     { title: "Ping Pong Game", description: "A fun and interactive Ping Pong game built with HTML, CSS, and JavaScript.", liveDemo: "https://ping-pong-nine-beta.vercel.app/" },
   ];
 
@@ -34,7 +39,7 @@ function Projects() {
       {projects.map((project, index) => (
         <div key={index} style={projectItemStyle}>
           <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          <p style={textStyle}>{project.description}</p>
           <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" style={linkStyle}>Live Demo</a>
         </div>
       ))}

@@ -1,15 +1,15 @@
 import React from 'react';
-import fccCertification from './assets/FreeCodeCamp Certfication.png';
+import Certification from '../assets/FreeCodeCamp Certfication.png';
 
 const certStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: '20px',
+  //padding: '20px',
 };
 
 const imageStyle = {
-  maxWidth: '100%',
+  maxWidth: '70%',
   height: 'auto',
   marginTop: '20px',
 };
@@ -20,7 +20,7 @@ function Cert() {
       <div style={certStyle}>
         <h2>My Certifications</h2>
         <img 
-          src={fccCertification} 
+          src={Certification} 
           alt="FreeCodeCamp Certification" 
           style={imageStyle}
         />

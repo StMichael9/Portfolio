@@ -5,9 +5,11 @@
   "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env CI=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && npm run optimize",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "optimize": "node scripts/optimize.js",
+    "dev": "react-scripts start"
   },
   "dependencies": {
     "react": "^18.2.0",

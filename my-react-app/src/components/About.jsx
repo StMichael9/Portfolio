@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutMePic from '../portfolio about me pic.png';
 
 const containerStyle = {
   display: 'flex',
@@ -18,8 +19,8 @@ const textStyle = {
 };
 
 const picStyle = { 
-  height: '500px',
-  width: '500px',
+  height: '300px',
+  width: '300px',
   borderRadius: '50%',
   objectFit: 'cover',
 };
@@ -37,9 +38,10 @@ function About() {
         </p>
       </div>
       <img 
-        src="https://mail.google.com/mail/u/0?ui=2&ik=8a98a45bcd&attid=0.1&permmsgid=msg-f:1817819508906878288&th=193a31364e2b6550&view=fimg&fur=ip&permmsgid=msg-f:1817819508906878288&sz=s0-l75-ft&attbid=ANGjdJ9k8fIYv3TeFyMfTXKPBaOicKsLTYHVbkR2dEP9X2bbLNpOomHeP3aDQ9AFcW_IpshCYzTd1rFF6-94JKJOJ_hZhOiuTOhEY5iJB5mO9ipFuMWyU1qxJqjyHd0&disp=emb&realattid=193a312ff98f52e44041&zw" 
-        alt="A picture of me" 
+        src={aboutMePic} 
         style={picStyle}
+        alt="Profile" 
+        className="profile-image" 
       />
     </div>
   );

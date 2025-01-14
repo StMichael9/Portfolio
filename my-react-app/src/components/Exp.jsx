@@ -1,5 +1,4 @@
 import React from 'react';
-import Chatbot from './Chatbot';
 
 const picStyle = { 
     height: '100px',

@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const cors = require('cors');
 const path = require('path');
 
@@ -7,6 +8,9 @@ const port = process.env.PORT || 3001;
 
 // Trust AWS proxy
 app.set('trust proxy', 1);
+
+// Add compression
+app.use(compression());
 
 // Add proper CORS configuration
 app.use(cors({

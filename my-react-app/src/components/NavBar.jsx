@@ -48,6 +48,14 @@ function NavBar() {
             Certification
           </button>
         </li>
+        <li>
+          <button 
+          onClick={() => scrollToSection('contact')}
+          about='Contact section'
+          className='nav-button'>
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
   );
