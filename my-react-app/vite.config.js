@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/StMichael.github.io/' ,
   build: {
-    outDir: 'dist'
+    outDir: 'build'
   }
 })
