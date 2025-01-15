@@ -11,16 +11,17 @@
     "dev": "react-scripts start"
   },
   "dependencies": {
+    "@remix-run/router": "^1.21.0",
+    "loose-envify": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-    "loose-envify": "^1.4.0",
-    "scheduler": "^0.23.2",
-    "@remix-run/router": "^1.21.0"
+    "scheduler": "^0.23.2"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "vite": "^6.0.7"
   },
   "eslintConfig": {
     "extends": "react-app"
