@@ -16,7 +16,7 @@
           "type": "cicd",
           "appRoot": "my-react-app",
           "buildCommand": "npm run build",
-          "distDir": "my-react-app/build"
+          "distDir": "build"
         }
       }
     }
