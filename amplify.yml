@@ -9,7 +9,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: my-react-app/dist
+    baseDirectory: my-react-app/build    # Changed to absolute path
     files:
       - '**/*'
   cache:
