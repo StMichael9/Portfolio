@@ -17,7 +17,7 @@ function NavBar() {
 
   return (
     <nav className="navbar" role="navigation" aria-label="Main navigation">
-      <div className="logo" role="banner">Saint Michael Egenamba</div>
+      <div className="logo" role="banner">Saint Michael</div>
       <div className="hamburger" onClick={toggleNav} aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
