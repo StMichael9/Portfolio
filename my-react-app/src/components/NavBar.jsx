@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function NavBar() {
+  const [isNavActive, setIsNavActive] = useState(false);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsNavActive(false); // Close the menu after clicking a link
+  };
+
+  const toggleNav = () => {
+    setIsNavActive(!isNavActive);
   };
 
   return (
     <nav className="navbar" role="navigation" aria-label="Main navigation">
       <div className="logo" role="banner">Saint Michael Egenamba</div>
-      <ul className="nav-links">
+      <div className="hamburger" onClick={toggleNav} aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={`nav-links ${isNavActive ? 'active' : ''}`}>
         <li>
           <button 
             onClick={() => scrollToSection('about')}
@@ -51,7 +63,7 @@ function NavBar() {
         <li>
           <button 
           onClick={() => scrollToSection('contact')}
-          about='Contact section'
+          aria-label="Contact section"
           className='nav-button'>
             Contact
           </button>
