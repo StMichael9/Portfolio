@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function NavBar() {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -8,12 +8,30 @@ function NavBar() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsNavActive(false); // Close the menu after clicking a link
+    closeNav(); // Close the menu after clicking a link
   };
 
   const toggleNav = () => {
     setIsNavActive(!isNavActive);
   };
+
+  const closeNav = () => {
+    setIsNavActive(false);
+  };
+
+  // Close the menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isNavActive && !event.target.closest('.navbar')) {
+        closeNav();
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isNavActive]);
 
   return (
     <nav className="navbar" role="navigation" aria-label="Main navigation">
