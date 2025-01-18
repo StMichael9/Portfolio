@@ -52,6 +52,11 @@ body::before {
   background-color: rgba(240, 240, 240, 0.1);
   background: linear-gradient(to right, #2b1055, #000428);
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .logo {
