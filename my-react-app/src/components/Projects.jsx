@@ -29,6 +29,7 @@ const textStyle = {
 function Projects() {
   const projects = [
     { title: "E-Com Site", description: "Coming Soon..." /*liveDemo: "https://example.com/ecom-site" } */ }  ,
+    { title: "Event Management platform", description: "Pixl Exam is a versatile event management platform that empowers users to discover, register, and organize local events effortlessly. The platform distinguishes between admins and regular users, allowing admins to create, edit, and delete events and tasks while regular users engage with and join events. Whether it's film festivals, chess tournaments, or wine walks, Pixl Exam fosters community engagement through seamless event experiences.", liveDemo: "https://pixl-exam.vercel.app"  } ,
     { title: "Counter 2", description: "This is a simple yet functional counter application built using React and Vite. The app allows users to increase, decrease, and reset the counter value. It's a great example of state management in React and demonstrates the use of functional components and hooks.", liveDemo: "https://counter-blush-rho.vercel.app/" },
     { title: "Ping Pong Game", description: "A fun and interactive Ping Pong game built with HTML, CSS, and JavaScript.", liveDemo: "https://ping-pong-nine-beta.vercel.app/" },
   ];
