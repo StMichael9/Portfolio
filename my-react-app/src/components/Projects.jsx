@@ -32,7 +32,7 @@ function Projects() {
       title: "TaskMaster",
       description:
         "TaskMaster is a full-stack React/Express.js application that streamlines task and project management with secure user authentication. It features an intuitive interface for creating and organizing tasks with priorities and due dates, while supporting offline functionality through local storage. The app includes a notes system for quick reminders and an AI assistant to help users optimize their productivity workflow.",
-      liveDemo: "https://task-master-pkmojnn37-stmichael9s-projects.vercel.app",
+      liveDemo: "https://task-master-teal-eta.vercel.app",
     },
     {
       title: "Event Management platform",
