@@ -13,7 +13,7 @@ function BusinessCard() {
       justifyContent: "space-between"
     }}>
       <div>
-        <h2>St. Michael Egenamba</h2>
+        <h2>St Michael Egenamba</h2>
         <p>Software Engineer</p>
         <p>Stmichaelegenamba@gmail.com</p>
         <p>https://github.com/StMichael9</p>
