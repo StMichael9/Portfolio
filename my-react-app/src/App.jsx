@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Contact from './components/Contact';
+import BusinessCard from './components/BusinessCard';
 
 // Lazy load components
 const About = lazy(() => import('./components/About'));
@@ -19,6 +20,7 @@ function App() {
         <Projects />
         <Cert />
       </Suspense>
+      <BusinessCard />
       <Contact />
     </>
   );
