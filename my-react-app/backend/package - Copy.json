@@ -1,0 +1,24 @@
+{
+  "name": "my-react-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd ../my-react-app && npm install && react-scripts build",
+    "build:backend": "cd ../backend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "amplify": {
+    "backend": {
+      "hosting": {
+        "amplifyhosting": {
+          "type": "cicd",
+          "appRoot": "my-react-app",
+          "buildCommand": "npm run build",
+          "distDir": "my-react-app/build"
+        }
+      }
+    }
+  }
+}
